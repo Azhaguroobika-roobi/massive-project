@@ -1,0 +1,689 @@
+.container{
+    font-family:sans-serif;
+}
+.logo{
+    width:70px;
+    height: 70px;
+}
+.header{
+    display: flex;
+    gap:50px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 1400px;
+}
+.navigation{
+    padding: 40px;
+    display: flex;
+}
+.navigation a{
+    font-size: small;
+}
+ /* HOME dropdown........................... */
+.Home {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown button */
+.Home button {
+    padding: 5px 15px;
+    border: none;
+    color:rgb(221, 192, 63);
+    background-color: white;
+    cursor: pointer;
+}
+.Home button:hover {
+    color:rgb(221, 192, 63);
+}
+/* Dropdown content */
+.dropdown-content-home {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+.dropdown-content-home a {
+    color: black;
+    color: #aaa9a9;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
+    margin-left: 4px;
+}
+.dropdown-content-home a:hover {
+    background-color: rgb(249, 204, 121);
+    width: 200px;
+    padding: 5px;
+    color: white;
+}
+/* Show dropdown on hover */
+.Home:hover .dropdown-content-home {
+     display: block;
+}
+/* pages drop down................ */
+.pages button {
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.pages button:hover {
+    color:rgb(221, 192, 63);
+}
+/* Dropdown content */
+.dropdown-content-pages {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 800px;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+.dropdown-content-pages a {
+    color: black;
+    color: #aaa9a9;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
+    margin-left: 4px;
+    width:200px;
+}
+.dropdown-content-pages a:hover {
+    background-color:rgb(249, 204, 121);
+    width: 200px;
+    padding: 5px;
+    color: white;
+}
+/* Show dropdown on hover */
+.pages:hover .dropdown-content-pages {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr); 
+     gap: 10px;
+     width:870px;
+}
+/* Features dropdowm ................. */
+.feature button {
+    padding: 5px 15px;
+    border: none;
+    background-color: white; 
+    cursor: pointer;
+}
+.feature button:hover {
+    color:rgb(221, 192, 63);
+}
+/* Dropdown content */
+.dropdown-content-features {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+.dropdown-content-features a {
+    color: black;
+    color: #aaa9a9;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
+    /* margin-left: 4px; */
+}
+.dropdown-content-features a:hover {
+    background-color:rgb(249, 204, 121);
+    width: 200px;
+    padding: 5px;
+    color: white;
+}
+/* Show dropdown on hover */
+.feature:hover .dropdown-content-features {
+     display: block;
+}
+/* portfolio dropdown................. */
+.portfolio {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown button */
+.portfolio button {
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.portfolio button:hover {
+    color:rgb(221, 192, 63);
+}
+/* Dropdown content */
+.dropdown-content-portfolio {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+.dropdown-content-portfolio a {
+    color: black;
+    color: #aaa9a9;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
+    margin-left: 4px;
+}
+.dropdown-content-portfolio a:hover {
+    background-color: rgb(249, 204, 121);
+    width: 200px;
+    padding: 5px;
+    color: white;
+}
+/* Show dropdown on hover */
+.portfolio:hover .dropdown-content-portfolio {
+     display: block;
+}
+/* blog dropdown ......................... */
+.blog button {
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.blog button:hover {
+    color:rgb(221, 192, 63);
+}
+/* Dropdown content */
+.dropdown-content-blog {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+.dropdown-content-blog a {
+    color: black;
+    color: #aaa9a9;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
+    margin-left: 4px;
+}
+.dropdown-content-blog a:hover {
+    background-color: rgb(249, 204, 121);
+    width: 200px;
+    padding: 5px;
+    color: white;
+}
+/* Show dropdown on hover */
+.blog:hover .dropdown-content-blog {
+     display: block;
+}
+/* shortcode dropdown................................. */
+.shortcodes button {
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.shortcodes button:hover {
+    color:rgb(221, 192, 63);
+}
+/* Dropdown content */
+.dropdown-content-shortcodes {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 650px;
+    z-index: 1;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+.dropdown-content-shortcodes a {
+    color: black;
+    color: #aaa9a9;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
+    margin-left: 4px;
+    width:140px;
+    justify-content: center;
+}
+.dropdown-content-shortcodes a:hover {
+    background-color:rgb(249, 204, 121);
+    width: 160px;
+    padding: 5px;
+    color: white;
+    justify-content: center;
+}
+/* Show dropdown on hover */
+.shortcodes:hover .dropdown-content-shortcodes {
+     display: grid;
+     grid-template-columns: repeat(6, 1fr); 
+     gap: 10px;
+     width: 650px;
+}
+/* shop dropdown............................. */
+.shop button {
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.shop button:hover {
+    color:rgb(221, 192, 63);
+}
+/* Dropdown content */
+.dropdown-content-shop {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+.dropdown-content-shop a {
+    color: black;
+    color: #aaa9a9;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
+    margin-left: 4px;
+}
+.dropdown-content-shop a:hover {
+    background-color: rgb(249, 204, 121);
+    width: 200px;
+    padding: 5px;
+    color: white;
+}
+/* Show dropdown on hover */
+.shop:hover .dropdown-content-shop {
+     display: block;
+}
+/* search dropdown.................... */
+.search button {
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.search button:hover {
+    color:rgb(221, 192, 63);
+}
+.dropdown-content-search {
+    display: none; 
+    position: absolute;
+    background-color: #212121;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 270px;
+    height:60px;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+.dropdown-content-search input {
+    width: 240px;
+    height:30px;
+    margin: 15px;
+}
+.search:hover .dropdown-content-search {
+    display: block;
+}
+.search-box{
+    color: #aaa9a9;
+}
+/* cart dropdown.......................... */
+.cart button {
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+/* .cart button:hover {
+    color:rgb(221, 192, 63);
+} */
+.dropdown-content-cart {
+    display: none;
+    /* position: absolute;
+    background-color: #212121;
+    width:360px ;
+    height: 340px;
+    color: #aaa9a9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: grid;
+    grid-template-rows: 50% 10%; */
+}
+.cart-dropdown{
+    display: none;
+    display: grid;
+    grid-template-columns: 25% 35% 10% 20% 10%;
+    /* color: #aaa9a9;
+    width: 370px; */
+}
+hr{
+    color: #aaa9a9;
+    width: 340px;
+}
+.cart:hover .dropdown-content-cart {
+    display:block;
+    position: absolute;
+    background-color: #212121;
+    width:360px ;
+    height: 340px;
+    color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+img{
+    width:70px;
+    height: 70px;
+}
+.cart-dropdown-button{
+    display: grid;
+    grid-template-columns: 25% 35% 30%;
+}
+.cart-dropdown-button button{
+    background-color: #5f5d5d;
+    color: white;
+}
+.viewcart:hover{
+    background-color:rgb(249, 204, 121);
+    color: white;   
+}
+.checkout:hover{
+    background-color:rgb(249, 204, 121);
+    color: white;
+}
+/* 1st background image............... */
+.bg-img{
+    width:900px;
+    height: 500px;
+    padding-top: 90px; 
+    text-align: center;
+    color: white;
+    font-size:px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bg-img button{
+    width: 210px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    color: #212121;
+    /* font-weight: bold; */
+}
+.bg-img button:hover{
+    background-color: rgb(210, 170, 95);
+    color: white;
+}
+/* icon section.......................... */
+.icon-section{
+    display:grid;
+    grid-template-rows: 50% 50%;
+    gap:70px;
+    width:1100px;
+}
+.icon-section p{
+    color: #807e7e;
+}
+.icon-section h3{
+    font-weight:100;
+}
+.icon-section i{
+    color: #807e7e;
+}
+.upper{
+    display: flex;
+    gap:160px;
+    justify-content:center ;
+    text-align: center;
+    justify-items: center;
+}
+.lower{
+    display: flex;
+    gap:170px;
+    justify-content:center ;
+    text-align: center;
+    justify-items: center;
+}
+.circle{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    justify-content: center;
+        width: 80px;
+        height: 80px;
+        border: 5px solid rgb(248, 248, 248);
+        border-radius: 50%; 
+        background-color: white;
+}
+/* image section............................. */
+
+.upper-img{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 50px;
+}
+.lower-img{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 50px;
+}
+.image{
+    width: 270px;
+    height: 200px;
+}
+.image:hover{
+    opacity: 0.3;
+}
+.img-section{
+    display: grid;
+    gap: 30px;
+    padding: 25px;
+    width:1200px;
+}
+.carousel-inner img{
+    width: 290px;
+    height: 200px;
+}
+/* Building your massive project section  */
+.black{
+    height:180px;
+    width: 1000px;
+    background-color:#212121 ;
+    color: white;
+    padding: 60px;
+}
+.black span{
+    color:rgb(210, 170, 95);
+}
+.black button{
+    width:220px;
+    height:50px;
+    background-color: #5f5d5d;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+.black button:hover{
+    width:220px;
+    height:50px;
+    background-color:rgb(210, 170, 95);
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+.black-content{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+/*  who we are  section ..........*/
+.lap-img-section{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width:1000px;
+    height:480px;
+    padding: 50px;
+    background-color:white;
+}
+.lap-img-section img{
+    width:500px;
+    height: 350px;
+}
+.lap-img-section span{
+    color:rgb(210, 170, 95) ;
+}
+.lap-img-section .ash{
+    color: #807e7e;
+}
+.lap-img-section button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: smaller;
+    width:140px;
+    height:40px;
+}
+.lap-img-section button:hover{
+    background-color:rgb(210, 170, 95);
+    color: white;
+    font-weight: bold;
+    font-size: smaller;
+    width:140px;
+    height:40px;
+    border: none;
+}
+/* completion-section......... */
+.completion-section{
+    width: 1000px;
+    height: 200px;
+    background-color: #333232;
+    color:white;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 100px;
+}
+.project{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+.slash{
+    font-size: xx-large;
+    color: #807e7e;
+}
+/* why we are best section */
+.para-list-section{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap:40px;
+    padding: 80px;
+}
+.li{
+    display: flex;
+}
+ul{
+    list-style-type: circle;
+}
+.para-list-section .ash{
+    color: #807e7e;
+}
+.para-list-section button{
+    width:200px;
+    height:50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size:small ;
+}
+.para-list-section button:hover{
+    width:200px;
+    height:50px;
+    background-color:rgb(210, 170, 95);
+    color: white;
+    font-weight: bold;
+    font-size:small ;
+    border: none;
+}
+/* subscribe section........... */
+.subscribe-section{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    background-color: #f5f5f5;
+    padding:50px;
+    gap:20px;
+    width:fit-content;
+}
+.subscribe-section p{
+    color: #807e7e;
+}
+.subscribe-section input{
+    width:580px;
+    height: 50px;
+    font-size: small;
+    color: #807e7e;
+
+}
+.subscribe-section button{
+    width:200px;
+    height:50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size:small ;
+}
+.subscribe-section button:hover{
+    width:200px;
+    height:50px;
+    background-color:rgb(210, 170, 95);
+    color: white;
+    font-weight: bold;
+    font-size:small ;
+    border: none;
+}
+/* GET IN TOUCH SECTION */
+.get-in-touch-section{
+text-align: center;
+padding: 60px;
+}
+.contact-info{
+    display: grid;
+grid-template-columns: 30% 30% 30%;
+gap: 50px;
+padding: 60px;
+}
+.get-in-touch-section p{
+    color: #aaa9a9;
+}
+/* massive footer section */
+.footer{
+    display: grid;
+    grid-template-columns: 20% 25% 25% 30%;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    gap: 10px;
+}
+hr{
+    width:250px;
+}
+.footer p{
+    color: #aaa9a9;
+}
+.posts p:hover{
+    color: rgb(210, 170, 95);
+}
+.follow-us p:hover{
+    color: rgb(210, 170, 95);
+}
+
+
