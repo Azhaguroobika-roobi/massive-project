@@ -11,7 +11,7 @@
     position: sticky;
     top: 0;
     background-color: white;
-    width: 1400px;
+    width: 100%;
 }
 .navigation{
     padding: 40px;
@@ -346,9 +346,9 @@
     background-color: white;
     cursor: pointer;
 }
-/* .cart button:hover {
+.cart button:hover {
     color:rgb(221, 192, 63);
-} */
+}
 .dropdown-content-cart {
     display: none;
     /* position: absolute;
@@ -394,9 +394,13 @@ img{
     background-color: #5f5d5d;
     color: white;
 }
-.viewcart:hover{
+.viewcart{
     background-color:rgb(249, 204, 121);
-    color: white;   
+    color: white; 
+}
+.viewcart:hover {
+    background-color:white;
+    color:black;   
 }
 .checkout:hover{
     background-color:rgb(249, 204, 121);
@@ -404,7 +408,7 @@ img{
 }
 /* 1st background image............... */
 .bg-img{
-    width:900px;
+    width:1300px;
     height: 500px;
     padding-top: 90px; 
     text-align: center;
@@ -429,28 +433,29 @@ img{
 .icon-section{
     display:grid;
     grid-template-rows: 50% 50%;
-    gap:70px;
-    width:1100px;
+    gap:40px;
+    width: 1100px;
+    margin: 20px;
 }
 .icon-section p{
     color: #807e7e;
 }
-.icon-section h3{
+/* .icon-section h3{
     font-weight:100;
-}
+} */
 .icon-section i{
     color: #807e7e;
 }
 .upper{
     display: flex;
-    gap:160px;
+    gap:80px;
     justify-content:center ;
     text-align: center;
     justify-items: center;
 }
 .lower{
     display: flex;
-    gap:170px;
+    gap:80px;
     justify-content:center ;
     text-align: center;
     justify-items: center;
@@ -491,14 +496,10 @@ img{
     padding: 25px;
     width:1200px;
 }
-.carousel-inner img{
-    width: 290px;
-    height: 200px;
-}
 /* Building your massive project section  */
 .black{
-    height:180px;
-    width: 1000px;
+    height:100px;
+    width: 1100px;
     background-color:#212121 ;
     color: white;
     padding: 60px;
@@ -564,7 +565,7 @@ img{
 }
 /* completion-section......... */
 .completion-section{
-    width: 1000px;
+    width: 1050px;
     height: 200px;
     background-color: #333232;
     color:white;
@@ -603,7 +604,7 @@ ul{
     background-color: black;
     color: white;
     font-weight: bold;
-    font-size:small ;
+    font-size:small;
 }
 .para-list-section button:hover{
     width:200px;
@@ -619,6 +620,7 @@ ul{
     display: grid;
     grid-template-columns: 40% 40%;
     background-color: #f5f5f5;
+    margin-left: 80px;
     padding:50px;
     gap:20px;
     width:fit-content;
@@ -667,14 +669,16 @@ padding: 60px;
 /* massive footer section */
 .footer{
     display: grid;
-    grid-template-columns: 20% 25% 25% 30%;
-    background-color: black;
+    grid-template-columns: 30% 24% 24% 20%;
+    background-color:#212121;
     color: white;
     padding: 50px;
     gap: 10px;
 }
 hr{
+    padding-left: 5px;
     width:250px;
+    border: solid rgb(118, 116, 116) 0.5px;
 }
 .footer p{
     color: #aaa9a9;
@@ -685,5 +689,31 @@ hr{
 .follow-us p:hover{
     color: rgb(210, 170, 95);
 }
-
-
+/* copyright section................... */
+.copyright span:hover{
+    color: rgb(210, 170, 95);
+}
+.copyright{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+.copyright p{
+    color: #807e7e;
+}
+.copyright span{
+    color: white;
+}
+.refer-icon{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    gap:20px;
+}
+.refer-icon i{
+    color: #5f5d5d;
+}
+.refer-icon i:hover{
+    color: white;
+}
